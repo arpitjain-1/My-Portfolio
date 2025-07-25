@@ -1,0 +1,75 @@
+.touch-device .project-card:hover,
+.touch-device .service-card:hover,
+.touch-device .skill-item:hover {
+    transform: none;
+}
+
+/* Low-end device optimizations */
+.low-end-device * {
+    animation-duration: 0.2s !important;
+    transition-duration: 0.2s !important;
+}
+
+.low-end-device .floating-card,
+.low-end-device .center-orb {
+    animation: none;
+}
+
+/* Keyboard navigation styles */
+.keyboard-navigation *:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Viewport height fix for mobile */
+.hero {
+    min-height: calc(var(--vh, 1vh) * 100);
+}
+
+/* Improved performance for rotating elements */
+.service-card::before {
+    will-change: transform;
+}
+
+/* GPU acceleration for smooth animations */
+.project-card,
+.service-card,
+.skill-item,
+.btn,
+.social-link {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Optimize background attachments */
+.hero {
+    background-attachment: scroll;
+}
+
+/* Smooth font rendering */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Optimize backdrop filters for better performance */
+@supports (backdrop-filter: blur(20px)) {
+
+    .contact-form,
+    .profile-card,
+    .project-card,
+    .service-card {
+        backdrop-filter: blur(20px);
+    }
+}
+
+@supports not (backdrop-filter: blur(20px)) {
+
+    .contact-form,
+    .profile-card,
+    .project-card,
+    .service-card {
+        background: rgba(255, 255, 255, 0.08);
+    }
+}
