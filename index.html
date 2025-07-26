@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Arpit Jain - Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./performance.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/apple-touch-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./image/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Loading Screen -->
     <div class="loading" id="loading">
         <div class="loader"></div>
     </div>
 
+    <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <div class="logo">Portfolio</div>
+            <div class="logo">Arpit</div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-link get-in-touch">Get in touch</a></li>
             </ul>
             <button class="mobile-menu" id="mobileMenu">
                 <i class="fas fa-bars"></i>
@@ -29,244 +34,383 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-grid">
-            <div class="hero-content">
-                <h1>Your Name</h1>
-                <div class="subtitle">Full Stack Developer</div>
-                <p>Crafting digital experiences that blend creativity with cutting-edge technology. Specialized in modern web applications and user-centered design.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-rocket"></i> View Work
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        <i class="fas fa-chat"></i> Let's Talk
-                    </a>
-                </div>
+        <div class="hero-content fade-up">
+            <div class="hero-badge">
+                <i class="fas fa-sparkles"></i>
+                Available for new opportunities
             </div>
-            <div class="hero-visual">
-                <div class="floating-card">
+            <h1>Arpit <span class="highlight">Jain</span></h1>
+            <div class="hero-subtitle">Full Stack Developer & Software Engineer</div>
+            <p class="hero-description">
+                Crafting elegant digital solutions with modern technologies. Specialized in creating 
+                scalable web applications and user-centered experiences that make a real impact.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-arrow-right"></i> View My Work
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.github.com/arpitjain-1" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin/in/arpitjain02" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.x.com/arpitjain_420" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www/instagram.com/_.arpit.jn" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="quote fade-up">
+            <div class="quote-icon">
+                <i class="fas fa-quote-right"></i>
+            </div>
+            <p class="quote-text">"Code is like humor. When you have to explain it, it's bad."</p>
+            <p class="quote-author">- Cory House</p>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-badge">
                     <i class="fas fa-code"></i>
-                    <p>Clean Code</p>
+                    My Work
                 </div>
-                <div class="floating-card">
-                    <i class="fas fa-palette"></i>
-                    <p>Creative Design</p>
-                </div>
-                <div class="floating-card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <p>Responsive</p>
-                </div>
-                <div class="center-orb">
-                    <i class="fas fa-user"></i>
-                </div>
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <p class="section-subtitle">A showcase of my latest work and creative solutions that solve real-world problems</p>
             </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Passionate developer with a love for creating innovative solutions</p>
-            </div>
-            <div class="about-grid">
-                <div class="about-image fade-up">
-                    <div class="profile-card">
-                        <div class="profile-img">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <h3>John Doe</h3>
-                        <p>5+ Years Experience</p>
-                    </div>
-                </div>
-                <div class="about-text fade-up">
-                    <h3>Hello! I'm a passionate developer</h3>
-                    <p>With over 5 years of experience in web development, I specialize in creating modern, responsive, and user-friendly applications. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing my knowledge through blog posts and mentoring.</p>
-                    <div class="skills-grid">
-                        <div class="skill-item">JavaScript</div>
-                        <div class="skill-item">React</div>
-                        <div class="skill-item">Node.js</div>
-                        <div class="skill-item">Python</div>
-                        <div class="skill-item">MongoDB</div>
-                        <div class="skill-item">AWS</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">A showcase of my latest work and creative solutions</p>
-            </div>
+            
             <div class="projects-grid">
                 <div class="project-card fade-up">
-                    <div class="project-content">
-                        <h3>E-Commerce Platform</h3>
-                        <p>Modern e-commerce solution with real-time inventory, secure payments, and admin dashboard. Built with React, Node.js, and MongoDB.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> Source
-                            </a>
-                        </div>
+                    <div class="project-title">FinFlow</div>
+                    <div class="project-description">
+                        A comprehensive financial management application built with modern web technologies. 
+                        Features include expense tracking, budget planning, and financial analytics with 
+                        real-time data visualization and secure payment integration.
                     </div>
                 </div>
+                
                 <div class="project-card fade-up">
-                    <div class="project-content">
-                        <h3>Task Management App</h3>
-                        <p>Collaborative productivity app with real-time updates, team workspaces, and advanced analytics. Features drag-and-drop interface.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> Source
-                            </a>
-                        </div>
+                    <div class="project-title">TaskMaster Pro</div>
+                    <div class="project-description">
+                        Advanced project management platform with team collaboration, real-time updates, 
+                        and intelligent task automation. Built with microservices architecture for scalability.
                     </div>
                 </div>
+                
                 <div class="project-card fade-up">
-                    <div class="project-content">
-                        <h3>AI Dashboard</h3>
-                        <p>Intelligent analytics dashboard with machine learning insights, data visualization, and predictive modeling capabilities.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> Source
-                            </a>
-                        </div>
+                    <div class="project-title">CloudDeploy Suite</div>
+                    <div class="project-description">
+                        DevOps automation platform that streamlines deployment processes with CI/CD pipelines, 
+                        container orchestration, and monitoring dashboards for enterprise applications.
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
+    <!-- About Section -->
+    <section id="about" class="section" style="background: rgba(30, 41, 59, 0.3);">
         <div class="container">
             <div class="section-header fade-up">
-                <h2 class="section-title">What I Offer</h2>
-                <p class="section-subtitle">Comprehensive solutions for your digital needs</p>
+                <div class="section-badge">
+                    <i class="fas fa-user"></i>
+                    About Me
+                </div>
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">Passionate about creating digital experiences that make a difference</p>
             </div>
+            
+            <div class="about-grid">
+                <div class="about-content fade-up">
+                    <h3>Hello! I'm Arpit</h3>
+                    <p>
+                        I'm a passionate full-stack developer with over 2 years of experience building 
+                        modern web applications. I love solving complex problems and turning ideas 
+                        into elegant, user-friendly solutions that make a real impact.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new technologies, 
+                        contributing to open source projects, or sharing knowledge with the 
+                        developer community. I believe in continuous learning and staying 
+                        ahead of the curve in this ever-evolving field.
+                    </p>
+
+                    <div class="tech-section">
+                        <h4>Technologies I work with</h4>
+                        <div class="tech-grid">
+                            <div class="tech-item">Java</div>
+                            <div class="tech-item">React</div>
+                            <div class="tech-item">Node.js</div>
+                            <div class="tech-item">Spring Boot</div>
+                            <div class="tech-item">MongoDB</div>
+                            <div class="tech-item">AWS</div>
+                            <div class="tech-item">Docker</div>
+                            <div class="tech-item">Microservices</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-grid fade-up">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+
+                    <!-- <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Cups of Coffee</div>
+                    </div> -->
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-tools"></i>
+                    Services
+                </div>
+                <h2 class="section-title">What I <span class="highlight">Offer</span></h2>
+                <p class="section-subtitle">Comprehensive solutions tailored to your business needs</p>
+            </div>
+            
             <div class="services-grid">
                 <div class="service-card fade-up">
                     <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
+                        <i class="fas fa-layer-group"></i>
                     </div>
-                    <h3>Web Development</h3>
-                    <p>Custom web applications built with modern technologies and best practices for optimal performance.</p>
+                    <h3>Microservices</h3>
+                    <p>Distributed systems with independent services for maximum scalability and flexibility.</p>
+                    <ul class="service-features">
+                        <li>Service Architecture</li>
+                        <li>API Gateway</li>
+                        <li>Service Discovery</li>
+                        <li>Load Balancing</li>
+                    </ul>
                 </div>
-                <div class="service-card fade-up">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Mobile Apps</h3>
-                    <p>Cross-platform mobile applications that deliver native performance and user experience.</p>
-                </div>
-                <div class="service-card fade-up">
-                    <div class="service-icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3>UI/UX Design</h3>
-                    <p>User-centered design solutions that focus on usability, accessibility, and visual appeal.</p>
-                </div>
+
                 <div class="service-card fade-up">
                     <div class="service-icon">
                         <i class="fas fa-cloud"></i>
                     </div>
                     <h3>Cloud Solutions</h3>
-                    <p>Scalable cloud infrastructure and deployment strategies for modern applications.</p>
+                    <p>Cloud-native applications with automated deployment and infrastructure management.</p>
+                    <ul class="service-features">
+                        <li>AWS Services</li>
+                        <li>Docker Containers</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>Monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="service-card fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Full Stack Development</h3>
+                    <p>End-to-end web application development with modern frameworks and best practices.</p>
+                    <ul class="service-features">
+                        <li>React Frontend</li>
+                        <li>Node.js Backend</li>
+                        <li>Database Design</li>
+                        <li>API Development</li>
+                    </ul>
+                </div>
+
+                <div class="service-card fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Applications</h3>
+                    <p>Cross-platform mobile solutions that deliver native performance and user experience.</p>
+                    <ul class="service-features">
+                        <li>React Native</li>
+                        <li>iOS & Android</li>
+                        <li>Native Performance</li>
+                        <li>App Store Deployment</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="background: rgba(30, 41, 59, 0.3);">
         <div class="container">
             <div class="section-header fade-up">
-                <h2 class="section-title">Let's Connect</h2>
-                <p class="section-subtitle">Ready to bring your ideas to life? Let's start a conversation</p>
+                <div class="section-badge">
+                    <i class="fas fa-paper-plane"></i>
+                    Contact
+                </div>
+                <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+                <p class="section-subtitle">Have a project in mind? Let's discuss how we can work together</p>
             </div>
+            
             <div class="contact-grid">
                 <div class="contact-form fade-up">
+                    <div class="form-header">
+                        <h3>Send me a message</h3>
+                        <p>I'd love to hear about your project. Fill out the form and I'll get back to you as soon as possible.</p>
+                    </div>
+                    
                     <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">
                             <i class="fas fa-paper-plane"></i> Send Message
                         </button>
                     </form>
                 </div>
+
                 <div class="contact-info fade-up">
-                    <h3>Get In Touch</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <strong>Email</strong>
-                            <p>hello@yourname.com</p>
+                    <h3>Get in touch</h3>
+                    <p>Feel free to reach out through any of these channels. I'm always excited to discuss new opportunities.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h4>Email</h4>
+                                <p>arpit.0211@gmail.com</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <strong>Phone</strong>
-                            <p>+1 (555) 123-4567</p>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h4>Phone</h4>
+                                <p>+91-9644122117</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <strong>Location</strong>
-                            <p>Your City, Country</p>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h4>Location</h4>
+                                <p>Noida, India</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-dribbble"></i>
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Your Name. Crafted with passion and precision.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Arpit Jain</h3>
+                <p>
+                    Full Stack Developer passionate about creating innovative solutions that make a difference. 
+                    Let's build something amazing together.
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.github.com/arpitjain-1"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/arpitjain02"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.x.com/arpitjain_420"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/_.arpit.jn"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Mobile Apps</a></li>
+                    <li><a href="#">Cloud Solutions</a></li>
+                    <li><a href="#">Microservices</a></li>
+                    <li><a href="#">Consulting</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-quote">
+            <p>"The best way to predict the future is to create it."</p>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Made with ❤️ and lots of coffee</p>
+            <p>Arpit Jain. All rights reserved.</p>
         </div>
     </footer>
 
+    
 </body>
+
 <script src="./script.js"></script>
 </html>
